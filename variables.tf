@@ -1,20 +1,14 @@
 variable "name" {
   type        = "string"
-  description = "Subnet name to create on GCP"
+  description = "Subnet name to create on AWS"
 }
 
-variable "vpc" {
+variable "vpc_id" {
   type        = "string"
-  description = "Direct link to the network"
+  description = "VPC ID"
 }
 
-variable "subnetwork-region" {
-  type        = "string"
-  default     = ""
-  description = "Zone associated with the subnet. This defaults to the region configured in the provider."
-}
-
-variable "ip_cidr_range" {
+variable "cidr_block" {
   type        = "string"
   description = "IP range to book"
 }
@@ -30,3 +24,5 @@ variable "map_public_ip_on_launch" {
   description = "IP range to book"
   default ="true"
 }
+
+  
