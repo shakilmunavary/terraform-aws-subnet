@@ -1,8 +1,6 @@
-resource "google_compute_subnetwork" "new_subnetwork" {
-  name          = "${var.name}"
-  region        = "${var.subnetwork-region}"
-  network       = "${var.vpc}"
-  ip_cidr_range = "${var.ip_cidr_range}"
-  availability_zone = "${var.availability_zone}"
+resource "aws_subnet" "this.name" {
+  vpc_id                  = "${var.vpc_id}"
+  cidr_block              = "${var.ip_cidr_range}"
   map_public_ip_on_launch = "${var.map_public_ip_on_launch}"
+  availability_zone = "${var.availability_zone}"
 }
