@@ -26,3 +26,8 @@ variable "map_public_ip_on_launch" {
 }
 
   
+variable "tag_name" {
+  type        = "string"
+  description = "IP range to book"
+  default ="Subnet"
+}
