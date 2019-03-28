@@ -1,5 +1,5 @@
 
 output "id" {
   description = "ID of Subnet"
-  value       = "${}"
+  value       = "${aws_subnet.id}"
 }
