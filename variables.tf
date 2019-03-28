@@ -18,3 +18,15 @@ variable "ip_cidr_range" {
   type        = "string"
   description = "IP range to book"
 }
+
+variable "availability_zone" {
+  type        = "string"
+  description = "IP range to book"
+}
+
+
+variable "map_public_ip_on_launch" {
+  type        = "string"
+  description = "IP range to book"
+  default ="true"
+}
