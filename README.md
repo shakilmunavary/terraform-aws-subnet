@@ -16,6 +16,8 @@ module "subnet-personal-vpc" {
   vpc               = "${module.personal-vpc.self_link}"
   subnetwork-region = "${var.subnetwork_region}"
   ip_cidr_range     = "${var.ip_cidr_range}"
+  availability_zone = "${var.availability_zone}"
+  map_public_ip_on_launch = "${var.map_public_ip_on_launch}"
 }
 ```
 
